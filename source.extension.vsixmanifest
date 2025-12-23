@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="ObviousErrors.c7d95d96-7b2b-4e80-81c2-b1f6dc7895f6" Version="0.1" Language="en-US" Publisher="GuillaumeTz" />
-        <DisplayName>ObviousErrors</DisplayName>
-        <Description xml:space="preserve">Show informations, warnings and errors directly in code viewport.</Description>
+        <Identity Id="ObviousErrors.c7d95d96-7b2b-4e80-81c2-b1f6dc7895f6" Version="0.1.8" Language="en-US" Publisher="GuillaumeTz" />
+        <DisplayName>Obvious Errors</DisplayName>
+        <Description xml:space="preserve">Show informations, warnings and errors from ErrorList directly in code viewport.</Description>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">

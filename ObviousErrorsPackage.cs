@@ -15,6 +15,7 @@ along with this program.If not, see < https://www.gnu.org/licenses/>.
 */
 
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
 using System;
 using System.Runtime.InteropServices;
 using System.Threading;
@@ -40,6 +41,7 @@ namespace ObviousErrors
 	/// </para>
 	/// </remarks>
 	[PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
+	[ProvideAutoLoad(UIContextGuids80.NoSolution, PackageAutoLoadFlags.BackgroundLoad)]
 	[Guid(ObviousErrorsPackage.PackageGuidString)]
 	public sealed class ObviousErrorsPackage : AsyncPackage
 	{
@@ -66,6 +68,8 @@ namespace ObviousErrors
 			await this.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);
 
 			Instance = this;
+
+			ObviousErrorsManager.Init();
 		}
 
 		#endregion

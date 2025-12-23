@@ -38,7 +38,7 @@ namespace ObviousErrors
 		/// after the selection layer in the Z-order
 		/// </summary>
 		[Export(typeof(AdornmentLayerDefinition))]
-		[Name("ObiousErrors_TextAdornment")]
+		[Name("ObviousErrors_TextAdornment")]
 		[Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
 		private AdornmentLayerDefinition editorAdornmentLayer;
 
